@@ -1,0 +1,25 @@
+/* Find this rule (around line 661) */
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    animation: fadeInUp 0.8s ease-out;
+
+    /* ADD THIS LINE */
+    color: var(--text-secondary);
+    /* This is a light gray: #b8b9c9 */
+}
+
+/* This rule (around line 674) stays the same */
+.gradient-text {
+    background: linear-gradient(135deg, var(--accent-color) 0%, var(--primary-color) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+    /* ADD THIS LINE as a fallback for the gradient */
+    color: var(--text-primary);
+        -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+}
